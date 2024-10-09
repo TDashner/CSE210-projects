@@ -7,15 +7,44 @@ class Program
 
         Journal journal = new Journal();
 
+        Console.WriteLine("Welcome to the Journal!");        
+        Console.WriteLine("Choose a number you would like to perform: ");
+        Console.WriteLine("1. Write");
+        Console.WriteLine("2. Display");
+        Console.WriteLine("3. Load");
+        Console.WriteLine("4. Save");
+        Console.WriteLine("5. Quit");
+        Console.WriteLine("What would you like to do? "); 
+        int input = Convert.ToInt16(Console.ReadLine());
+        
+
+
+
         string choice = "";
         // make 5 into quit
         while (choice != "5")
         {
-        // make 1 into write
             if (choice == "1")
             {
                 journal.AddEntry();
             }
+            else if(choice == "2")
+            {
+                journal.DisplayEntries();
+            }
+            else if(choice == "3")
+            {
+                journal.Load();
+            }
+            else if(choice == "4")
+            {
+                journal.Save();
+            }
+            else 
+            {
+                break;
+            }
+
         }
 
 
@@ -34,12 +63,6 @@ class Program
         //Console.WriteLine(entry1._prompt);
 
 
-// journaling prompts:
-        //1. A Moment of Gratitude: Write about a recent experience that made you feel grateful. What happened, who was involved, and how did it impact you?
-        //2. A Letter to Your Future Self: Imagine you can write a letter to yourself five years from now. What advice, hopes, or reminders would you include?
-        //3. The Soundtrack of Your Life: If you had to create a playlist that represents your life so far, which five songs would you choose and why?
-        //4. Exploring a Memory: Choose a childhood memory that stands out to you. Describe it in detail—what you saw, heard, felt, and the emotions it evokes.
-        //5. Imagining Your Ideal Day: Describe a perfect day in your life, from the moment you wake up to the moment you go to bed. What activities would you include, and who would you spend it with?
 
 
         
