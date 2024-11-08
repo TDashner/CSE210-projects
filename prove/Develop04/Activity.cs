@@ -25,6 +25,7 @@ public abstract class Activity
         while (!int.TryParse(Console.ReadLine(), out inputDuration) || Duration <= 0)
         {
             Console.WriteLine("Please enter a valid number of seconds greater than 0.");
+            break;
         }
 
         Console.WriteLine("Get ready to begin...");
