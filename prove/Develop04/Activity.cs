@@ -46,7 +46,7 @@ public abstract class Activity
         for (int i = 0; i < seconds; i++)
         {
             Console.Write(".");
-            await Task.Delay(1000);  // Replaced Thread.Sleep with Task.Delay
+            await Task.Delay(1000);  
         }
         Console.WriteLine();
     }
