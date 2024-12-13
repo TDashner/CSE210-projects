@@ -2,50 +2,46 @@ using System;
 
 class Program
 {
+    private List<Video> _videos = new List<Video>();
     static void Main(string[] args)
     {
-        Video video1 = new Video();
-        video1._author = "";
-        video1._length = 120;
-        video1._title = "";
+        Video video1 = new Video() { _title = "Rainbow Slime ASMR", _author = "Slimer", _length = 120 };
+        Video video2 = new Video() { _title = "How To Code C# In 10 Easy Steps", _author= "How-To-Man", _length = 1800 };
+        Video video3 = new Video() { _title = "Why The Sky is Blue", _author= "iWonder", _length = 600 };
+        Video video4 = new Video() { _title = "Meal Prep With Me!", _author = "HealthyEating", _length = 3600 };
 
-        Video video2 = new Video();
-        video2._author = "";
-        video2._length = 1800;
-        video2._title = "";
+        video1.AddComment(new Comment("Slime Girly", "This is amazing!"));
+        video1.AddComment(new Comment("ASMR Nerd", "I love the sounds."));
+        video1.AddComment(new Comment("IsabellaDIY", "Very calming video."));
 
-        Video video3 = new Video();
-        video3._author = "";
-        video3._length = 600;
-        video3._title = "";
-        
-        Video video4 = new Video();
-        video4._author = "";
-        video4._length = 600;
-        video4._title = "";
+        video2.AddComment(new Comment("CryptoCat", "Great tutorial!"));
+        video2.AddComment(new Comment("JakeCreates", "Thanks for the explanation!"));
+        video2.AddComment(new Comment("EthanTechTalk", "Looking forward to part 2."));
 
+        video3.AddComment(new Comment("LukeVenture", "Interesting topic!"));
+        video3.AddComment(new Comment("GamerAlex", "I learned a lot."));
+        video3.AddComment(new Comment("LifeWithLiam", "Why does the sky really look blue?"));
 
-        Comment comment1 = new Comment();
-        comment1._name = "";
-        comment1._text = "";
-        
-        Comment comment2 = new Comment();
-        comment2._name = "";
-        comment2._text = "";
-
-        Comment comment3 = new Comment();
-        comment3._name = "";
-        comment3._text = "";
-
-        Comment comment4 = new Comment();
-        comment4._name = "";
-        comment4._text = "";
+        video4.AddComment(new Comment("CarlaCooks", "Great meal prep ideas!"));
+        video4.AddComment(new Comment("AlexFoodie", "Healthy eating is important!"));
+        video4.AddComment(new Comment("FitnessFanatic", "I'm totally saving this to make later."));
 
 
 
         Program program = new Program();
         program._videos.Add(video1);
-        myResume._jobs.Add(job2);
+        program._videos.Add(video2);
+        program._videos.Add(video3);
+        program._videos.Add(video4);
+
+        foreach (var video in program._videos)
+        {
+            video.Display();
+            Console.WriteLine();
+        }
+
+
+
 
 
 
