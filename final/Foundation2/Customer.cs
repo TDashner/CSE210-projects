@@ -5,6 +5,20 @@ public class Customer
     private string _name;
     private Address _address;
 
+    public string Name
+    {
+        get {return _name;}
+        set{_name = value;}
+    }
+
+    public Address address
+    {
+        get {return _address;}
+        set{_address = value;}
+    }
+
+
+
     public Customer(string name, Address address)
     {
         _name = name;
@@ -12,7 +26,7 @@ public class Customer
     }
 
     public string name { get => _name;}
-    public Address address { get => _address;}
+    public Address Address { get => _address;}
 
     public bool InUSA()
     {

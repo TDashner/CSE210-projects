@@ -7,6 +7,14 @@ public class Product
     private double _price;
     private int _quantity;
 
+    public string Name
+    {
+        get {return _name;}
+        set{_name = value;}
+    }
+
+
+
     public Product(string name, int productid, double price, int quantity)
     {
         _name = name;
