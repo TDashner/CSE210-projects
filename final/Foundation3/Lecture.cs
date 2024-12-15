@@ -36,6 +36,4 @@ public class Lecture : Event
         return $"Lecture: {GetTitle()} on {GetDate()}";
     }
 
-    public string GetTitle() => base.GetTitle();
-    public string GetDate() => base.GetDate();
 }

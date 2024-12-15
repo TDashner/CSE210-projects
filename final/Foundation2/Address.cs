@@ -43,10 +43,6 @@ public class Address
         _country = country;
     }
 
-    public string street { get => _street;}
-    public string city { get => _city;}
-    public string state { get => _state;}
-    public string country { get => _country;}
 
     public bool InUSA()
     {

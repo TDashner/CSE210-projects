@@ -48,9 +48,5 @@ public class Address
         return $"{_street}, {_city}, {_state} {_zip}";
     }
 
-    public string street {get => _street;}
-    public string city {get => _city;}
-    public string state {get=> _state;}
-    public string zip {get => _zip;}
 }
 
